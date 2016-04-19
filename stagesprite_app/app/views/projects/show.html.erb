@@ -1,19 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Title:</strong>
-  <%= @project.title %>
-</p>
+<%= react_component('Header', props=@project ) %>
 
-<p>
-  <strong>Desc:</strong>
-  <%= @project.desc %>
-</p>
-
-<p>
-  <strong>Creator:</strong>
-  <%= @project.creator %>
-</p>
-
-<%= link_to 'Edit', edit_project_path(@project) %> |
-<%= link_to 'Back', projects_path %>
+<!-- <%= link_to 'Edit', edit_project_path(@project) %> |
+<%= link_to 'Back', projects_path %> -->
