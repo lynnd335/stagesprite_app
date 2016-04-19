@@ -9,9 +9,51 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        align-items: center;
     }
     .header-col {
         display: flex;
         flex-direction: column;
+    }
+    .header-desc {
+        font-size: 12px;
+    }
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+}
+
+.sidebar {
+    flex: none;
+    padding: 15px 0px;
+    width: 25%;
+    border-right: #999999 1px solid;
+}
+
+.tab {
+    padding: 20px 50px;
+}
+
+.inner-nav {
+    .nav-row {
+        margin-top: -7px;
+        display: flex;
+        flex-direction: row;
+
+        .nav-button {
+            flex-grow: 1;
+            text-align: center;
+            border: 1px solid #999999;
+            border-top: none;
+            padding: 5px 0px;
+
+            &:hover {
+                background-color: #999999;
+                color: white;
+                cursor: pointer;
+            }
+        }
     }
 }
